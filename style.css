@@ -72,6 +72,17 @@ p {
   margin: 15px 0;
 }
 
+.column_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.column {
+  flex-grow: 1;
+}
+
 .intro {
   font-size: 22px;
   margin-bottom: 40px;
