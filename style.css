@@ -83,11 +83,6 @@ p {
   flex-grow: 1;
 }
 
-.intro {
-  font-size: 22px;
-  margin-bottom: 40px;
-}
-
 .contact {
   border: 1px dashed #aaa;
   padding: 10px;
