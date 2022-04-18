@@ -120,5 +120,12 @@ p {
 
 .info {
   color: #999;
+}
+
+.links > li {
+  padding: 0;
+}
+
+.links a {
   text-decoration: underline;
 }
