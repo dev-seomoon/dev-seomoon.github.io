@@ -106,15 +106,13 @@ p {
 }
 
 .whatIdid {
+  line-height: 1.5;
   padding-left: 25px;
   list-style: square;
   margin: 15px 0;
 }
 
-.whatIdid a:hover {
-  text-decoration: underline;
-}
-.project_info {
+.info {
   color: #999;
   text-decoration: underline;
 }
