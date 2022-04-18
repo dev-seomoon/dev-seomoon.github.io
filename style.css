@@ -1,13 +1,14 @@
 html,
 body {
+  font-size: 62.5%;
   font-family: 'Noto Sans KR', sans-serif;
   color: #111;
-  font-size: 18px;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-size: 1.6rem;
 }
 
 i {
@@ -24,7 +25,6 @@ ol {
 }
 
 li {
-  margin: 5px 0;
   padding: 5px 0;
 }
 
@@ -40,31 +40,26 @@ main {
 }
 
 h1 {
-  font-size: 55px;
-  margin: 30px 0;
+  font-size: 4.5rem;
+  margin: 20px 0;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 3rem;
   padding: 10px 8px;
   background-color: #111;
   color: #fff;
   border-radius: 1px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 2rem;
   padding: 8px;
   color: darkslateblue;
   background-color: #eee;
   border-radius: 1px;
-  margin: 30px 0 20px 0;
-}
-
-h4 {
-  font-size: 23px;
-  margin: 25px 0 15px 0;
+  margin: 15px 0 20px 0;
 }
 
 p {
@@ -93,17 +88,12 @@ p {
   background-color: #eee;
 }
 
-.desc {
-  color: #777;
-  font-size: 85%;
-}
-
 .skills {
   margin: 20px 0;
 }
 
 .skills > span {
-  font-size: 14px;
+  font-size: 1.4rem;
   background-color: #fff;
   border: 1px solid #ccc;
   color: darkslateblue;
@@ -120,6 +110,10 @@ p {
 
 .info {
   color: #888;
+}
+
+.links {
+  margin-bottom: 35px;
 }
 
 .links > li {
