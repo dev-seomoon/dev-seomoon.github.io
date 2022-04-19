@@ -148,7 +148,7 @@ hr {
   overflow-wrap: break-word;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 425px) {
   .column_container {
     flex-direction: column;
     gap: 0;
