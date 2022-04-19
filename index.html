@@ -1,144 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>이력서</title>
-        <link rel="stylesheet" href="./style.css" />
-        <script src="https://kit.fontawesome.com/daf150dfb5.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <main>
-            <h1>문선경 | Front-End Developer</h1>
-            <ul class="contact">
-                <li><a href="mailto: seomoon.frontend@gmail.com"><i class="fa-solid fa-envelope"></i>seomoon.frontend@gmail.com</a></li>
-                <li><a href="https://github.com/dev-seomoon" target="_blank"><i class="fa-brands fa-github"></i>https://github.com/dev-seomoon</a></li>
-                <li><a href="https://seomoon.tech" target="_blank"><i class="fa-solid fa-house"></i>https://seomoon.tech</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이력서</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/daf150dfb5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <h1>문선경 | Front-End Developer</h1>
+    <ul class="contact">
+      <li><a href="mailto: seomoon.frontend@gmail.com"><i
+            class="fa-solid fa-envelope"></i>seomoon.frontend@gmail.com</a></li>
+      <li><a href="https://github.com/dev-seomoon" target="_blank"><i
+            class="fa-brands fa-github"></i>https://github.com/dev-seomoon</a></li>
+      <li><a href="https://seomoon.tech" target="_blank"><i class="fa-solid fa-house"></i>https://seomoon.tech</a>
+      </li>
+    </ul>
+    <h2>핵심 역량</h2>
+    <ol>
+      <li>React를 사용한 SPA 개발</li>
+      <li>Storybook을 사용한 UI 컴포넌트 개발 경험</li>
+      <li>CSS 전처리기(SASS/SCSS) 및 CSS-in-JS(Styled Component) 사용 경험</li>
+      <li>Git을 사용한 협업 및 버전관리</li>
+      <li>AWS S3, Cloudfront, Route53을 사용한 배포 경험</li>
+    </ol>
+    <h2>프로젝트</h2>
+    <h3>가슴속3천원 웹 랜딩페이지 (개인)</h3>
+    <div class="column_container">
+      <div class="column left">
+        <p>
+          다운로드 수 38만 길거리 음식 찾기 어플리케이션 <b>가슴속3천원</b>의 웹 랜딩페이지.
+        </p>
+        <p class="info">프론트엔드 100%, 사이드 프로젝트<br />2022.1.3 - 2022.1.12 (10일)</p>
+        <div class="skills">
+          사용 기술 :
+          <span>React</span>
+          <span>Styled-Components</span>
+          <span>gh-pages</span>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/3dollar-in-my-pocket/home" target="_blank">
+              <i class="fa-brands fa-github"></i>https://github.com/3dollar-in-my-pocket/home</a>
+          </li>
+          <li>
+            <a href="https://intro.threedollars.co.kr" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i>https://intro.threedollars.co.kr</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="column right">
+        <h4>담당 업무</h4>
+        <ul class="whatIdid">
+          <li>전체 UI 구현</li>
+          <li>모바일 반응형 디자인 및 구현</li>
+          <li>이메일 전송 폼 구현</li>
+        </ul>
+      </div>
+    </div>
+    <h3>A-datagrid (팀)</h3>
+    <div class="column_container">
+      <div class="column left">
+        <p>
+          액셀처럼 사용할 수 있는 오픈소스 <b>React 데이터그리드 컴포넌트</b>.
+        </p>
+        <p class="info">프론트엔드 20%, 해커톤, 팀장<br />2021.11.20 - 2021.11.29 (10일)</p>
+        <p>
+        <div class="skills">
+          사용 기술 :
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Storybook</span>
+          <span>Less.js</span>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/a-component/datagrid" target="_blank"><i
+                class="fa-brands fa-github"></i>https://github.com/a-component/datagrid</a>
+          </li>
+          <li><a href="https://a-component.github.io/datagrid" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i>https://a-component.github.io/datagrid</a>
+            (demo)</li>
+        </ul>
+      </div>
+      <hr />
+      <div class="column right">
+        <h4>담당 업무</h4>
+        <ul class="whatIdid">
+          <li>커스텀 스크롤 구현</li>
+          <li>커스텀 스크롤과 네이티브 스크롤 동시 적용</li>
+          <li>데이터 필터링 UI 디자인 및 구현</li>
+          <li>
+            성능 최적화 (Chrome lighthouse 기준 Performance 33->77)
+            <ul class="sublist">
+              <li>스크롤 이벤트에 쓰로틀링 적용</li->
+              <li>화면에 보이는 데이터만 로딩</li>
+              <li>React의 Memoization 메소드 사용해 렌더링 최적화</li>
             </ul>
-            <h2>핵심 역량</h2>
-            <ol>
-                <li>React를 사용한 SPA 개발</li>
-                <li>Storybook을 사용한 UI 컴포넌트 개발 경험</li>
-                <li>CSS 전처리기(SASS/SCSS) 및 CSS-in-JS(Styled Component) 사용 경험</li>
-                <li>Git을 사용한 협업 및 버전관리</li>
-                <li>AWS S3, Cloudfront, Route53을 사용한 배포 경험</li>
-            </ol>
-            <h2>프로젝트</h2>
-            <h3>가슴속3천원 웹 랜딩페이지 (개인)</h3>
-            <p>
-                다운로드 수 38만 길거리 음식 찾기 어플리케이션 <b>가슴속3천원</b>의 웹 랜딩페이지. 
-            </p>
-            <p class="info">프론트엔드 100%, 사이드 프로젝트<br />2022.1.3 - 2022.1.12 (10일)</p>
-            <div class="skills">
-                사용 기술 :
-                <span>React</span>
-                <span>Styled-Components</span>
-                <span>gh-pages</span>
-            </div>
-            <ul class="links">
-                <li>
-                    <a
-                        href="https://github.com/3dollar-in-my-pocket/home"
-                        target="_blank"
-                        >
-                        <i class="fa-brands fa-github" ></i>https://github.com/3dollar-in-my-pocket/home</a
-                    >
-                </li>
-                <li>
-                    <a href="https://intro.threedollars.co.kr" target="_blank"
-                        ><i class="fa-solid fa-arrow-up-right-from-square"></i>https://intro.threedollars.co.kr</a
-                    >
-                </li>
-            </ul>
-            <h3>A-datagrid (팀)</h3>
-            <p>
-                액셀처럼 사용할 수 있는 오픈소스 <b>React 데이터그리드 컴포넌트</b>.
-            </p>
-            <p class="info">프론트엔드 20%, 해커톤, 팀장<br />2021.11.20 - 2021.11.29 (10일)</p>
-            <p>
-            <div class="skills">
-              사용 기술 :
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Storybook</span>
-              <span>Less.js</span>
-            </div>
-            <ul class="links">
-                <li>
-                    <a
-                        href="https://github.com/a-component/datagrid"
-                        target="_blank"
-                        ><i class="fa-brands fa-github" ></i>https://github.com/a-component/datagrid</a
-                    >
-                </li>
-                <li><a href="https://a-component.github.io/datagrid" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>https://a-component.github.io/datagrid</a> (demo)</li>
-            </ul>
-            <h3>Matching42 (팀)</h3>
-            <p>
-            <b>42서울</b> 내 동료학습 활성화를 목적으로 만들어진, 과제별 <b>랜덤 동료매칭
-              서비스</b>.
-            </p>
-            <p class="info">프론트엔드 30%, 사이드 프로젝트<br />2021.03 - 2021.11 (9개월)</p>
-            <div class="skills">
-              사용 기술 :
-              <span>React</span>
-              <span>AWS</span>
-              <span>Github Actions</span>
-            </div>
-            <ul class="links">
-                <li>
-                    <a
-                        href="https://github.com/Matching42/Matching42-front"
-                        target="_blank"
-                        ><i class="fa-brands fa-github" ></i>https://github.com/Matching42/Matching42-front</a
-                    ></li>
-                    <li><a href="https://matching42.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>https://matching42.com</a></li>
-                </li>
-            </ul>
-            <h3>Pepple (팀)</h3>
-            <p>개발자/기획자/디자이너를 이어주는 <b>음성 커뮤니티</b> 서비스.</p>
-            <p class="info">프론트엔드 100%, 사이드 프로젝트<br />2021.07 - 2021.10 (3개월)</p>
-            <div class="skills">
-                사용 기술 :
-                <span>React</span>
-                <span>SWR</span>
-                <span>Agora API</span>
-                <span>AWS</span>
-              </div>
-            <ul class="links">
-                <li>
-                <a href="https://github.com/woosap/pepple-front" target="_blank"
-                    ><i class="fa-brands fa-github" ></i>https://github.com/woosap/pepple-front</a
-                ></li>
-                <li>
-                <a href="https://pepple.link" target="_blank"
-                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>https://pepple.link</a
-                ></li>
-            </ul>
-            <h2>교육/기타</h2>
-            <div class="column_container">
-                <div class="column">
-                    <h3>교육</h3>
-                    <ul class="whatIdid">
-                        <li>
-                            <b>42Seoul</b><br />
-                            프로젝트형 과제와 동료 평가를 통해 컴퓨터 공학 기초 학습<br/>
-                            <span class="info">2020.07 - 2022.03 (1년 6개월)</span>
-                        </li>
-                        <li>
-                            <b>원티드 프리온보딩 코스 프론트엔드</b><br />
-                            4주 간 7개의 기업 기술과제를 개인 / 팀으로 수행<br />
-                            <span class="info">2022.02 - 2022.03 (4주)</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3>학력/어학 능력</h3>
-                    <ul class="whatIdid"><li>서경대학교 (<b>영어, 불어 복수전공</b>) 졸업<br />학점 3.43 / 4.5<br /><span class="info">2016.03 - 2021.08</span></li>
-                    <li>영어 기술 문서 및 레퍼런스를 독해할 수 있음<br />TOEIC 955<br /><span class="info">2020.12.05</span></li></ul>
-                </div>
-            </div>
-        </main>
-    </body>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3>Matching42 (팀)</h3>
+    <div class="column_container">
+      <div class="column left">
+        <p>
+          <b>42서울</b> 내 동료학습 활성화를 목적으로 만들어진, 과제별 <b>랜덤 동료매칭
+            서비스</b>.
+        </p>
+        <p class="info">프론트엔드 30%, 사이드 프로젝트<br />2021.03 - 2021.11 (9개월)</p>
+        <div class="skills">
+          사용 기술 :
+          <span>React</span>
+          <span>AWS</span>
+          <span>Github Actions</span>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/Matching42/Matching42-front" target="_blank"><i
+                class="fa-brands fa-github"></i>https://github.com/Matching42/Matching42-front</a>
+          </li>
+          <li><a href="https://matching42.com" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i>https://matching42.com</a></li>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="column right">
+        <h4>담당 업무</h4>
+        <ul class="whatIdid">
+          <li>Main Page UI 구현, API 연동</li>
+          <li>모바일 반응형 디자인 및 구현</li>
+          <li>AWS 배포 후 커스텀 도메인 적용</li>
+          <li>개발 브랜치 배포 자동화 (개발 서버와 실서버가 분리된 프로젝트로, Github Actions을 이용해 개발 브랜치 배포 자동화)</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Pepple (팀)</h3>
+    <div class="column_container">
+      <div class="column left">
+        <p>개발자/기획자/디자이너를 이어주는 <b>음성 커뮤니티</b> 서비스.</p>
+        <p class="info">프론트엔드 100%, 사이드 프로젝트<br />2021.07 - 2021.10 (3개월)</p>
+        <div class="skills">
+          사용 기술 :
+          <span>React</span>
+          <span>SWR</span>
+          <span>Agora API</span>
+          <span>AWS</span>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/woosap/pepple-front" target="_blank"><i
+                class="fa-brands fa-github"></i>https://github.com/woosap/pepple-front</a>
+          </li>
+          <li>
+            <a href="https://pepple.link" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i>https://pepple.link</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="column right">
+        <h4>담당 업무</h4>
+        <ul class="whatIdid">
+          <li>전체 UI 구현</li>
+          <li>채팅방 생성, 삭제, 입장, 퇴장 기능 구현</li>
+          <li>SNS 로그인 (Google, Kakao, Github)</li>
+          <li>음성 채팅 기능 with Agora API</li>
+        </ul>
+      </div>
+    </div>
+    <h2>교육/기타</h2>
+    <div class="column_container">
+      <div class="column left">
+        <h3>교육</h3>
+        <ul class="whatIdid">
+          <li>
+            <b>42Seoul</b><br />
+            프로젝트형 과제와 동료 평가를 통해 컴퓨터 공학 기초 학습<br />
+            <span class="info">2020.07 - 2022.03 (1년 6개월)</span>
+          </li>
+          <li>
+            <b>원티드 프리온보딩 코스 프론트엔드</b><br />
+            4주 간 7개의 기업 기술과제를 개인 / 팀으로 수행<br />
+            <span class="info">2022.02 - 2022.03 (4주)</span>
+          </li>
+        </ul>
+      </div>
+      <div class="column right">
+        <h3>학력/어학 능력</h3>
+        <ul class="whatIdid">
+          <li>서경대학교 (<b>영어, 불어 복수전공</b>) 졸업<br />학점 3.43 / 4.5<br /><span class="info">2016.03 -
+              2021.08</span></li>
+          <li>영어 기술 문서 및 레퍼런스를 독해할 수 있음<br />TOEIC 955<br /><span class="info">2020.12.05</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

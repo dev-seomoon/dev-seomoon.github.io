@@ -62,9 +62,18 @@ h3 {
   margin: 15px 0 20px 0;
 }
 
+h4 {
+  line-height: 1.5;
+}
+
 p {
   line-height: 1.5;
-  margin: 15px 0;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  border: 0.5px solid #eee;
+  margin-bottom: 2rem;
 }
 
 .column_container {
@@ -74,8 +83,12 @@ p {
   gap: 2rem;
 }
 
-.column {
-  flex-grow: 1;
+.left {
+  width: 55%;
+}
+
+.right {
+  width: calc(45% - 2rem);
 }
 
 .contact {
@@ -108,12 +121,17 @@ p {
   margin: 15px 0;
 }
 
+.sublist {
+  list-style: circle;
+  padding-left: 1em;
+}
+
 .info {
   color: #888;
 }
 
 .links {
-  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
 }
 
 .links > li {
@@ -122,4 +140,16 @@ p {
 
 .links a {
   text-decoration: underline;
+}
+
+@media all and (max-width: 767px) {
+  .column_container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }
